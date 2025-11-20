@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextPath</title>
+    <link rel="icon" type="image/png" href="./img/seta[1].png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body class="bg-white dark:bg-slate-900 transition-colors duration-300">
+    <header class="bg-emerald-300 dark:bg-emerald-700 shadow-md sticky top-0 z-50 transition-colors duration-300">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#">
+                    <img src="./img/logoT[1].png" alt="NextPath" class="h-8">
+                </a>
+
+                <nav class="hidden md:flex items-center space-x-6">
+                    <a href="#"
+                        class="text-black dark:text-white hover:text-emerald-600 dark:hover:text-emerald-300 transition-colors">Profissões</a>
+                    <a href="#"
+                        class="text-black dark:text-white hover:text-emerald-600 dark:hover:text-emerald-300 transition-colors">Talentos</a>
+                    <a href="#"
+                        class="text-black dark:text-white hover:text-emerald-600 dark:hover:text-emerald-300 transition-colors">Recursos</a>
+                    <a href="#"
+                        class="text-black dark:text-white hover:text-emerald-600 dark:hover:text-emerald-300 transition-colors">Sobre</a>
+                    <a href="#"
+                        class="text-black dark:text-white hover:text-emerald-700 dark:hover:text-emerald-200 transition-colors">Login</a>
+                </nav>
+
+                <div class="hidden md:flex items-center space-x-4">
+                    <div class="flex items-center space-x-2">
+
+                        <button id="btn-light-mode" type="button" aria-label="Ativar modo claro"
+                            class="p-2 rounded-full text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">
+                            <i class="fa-solid fa-sun h-5 w-5"></i>
+                        </button>
+
+                        <button id="btn-dark-mode" type="button" aria-label="Ativar modo escuro"
+                            class="p-2 rounded-full text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700">
+                            <i class="fa-solid fa-moon h-5 w-5"></i>
+                        </button>
+                    </div>
+
+                    <a href="#"
+                        class=" text-center bg-emerald-500 dark:bg-emerald-600 hover:bg-emerald-600 dark:hover:bg-emerald-500 text-white p-2 rounded-lg transition-colors">
+                        <i class="fa-solid fa-user w-5 h-5"></i>
+                        <span class="sr-only">Perfil</span>
+                    </a>
+                </div>
+
+                <div class="md:hidden">
+                    <button id="btn-mobile-menu" class="text-gray-800 dark:text-gray-200 focus:outline-none">
+                        <i class="fa-solid fa-bars h-6 w-6"></i>
+                        <span class="sr-only">Abrir menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-emerald-50 dark:bg-slate-800 px-4 pt-2 pb-4 space-y-2">
+            <a href="#"
+                class="block px-3 py-2 rounded-md text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">Profissões</a>
+            <a href="#"
+                class="block px-3 py-2 rounded-md text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">Talentos</a>
+            <a href="#"
+                class="block px-3 py-2 rounded-md text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">Recursos</a>
+            <a href="#"
+                class="block px-3 py-2 rounded-md text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">Sobre</a>
+            <hr class="dark:border-gray-700">
+            <a href="#"
+                class="block px-3 py-2 rounded-md text-black dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">Login</a>
+        </div>
+    </header>
+
+    <section class="bg-emerald-50 dark:bg-slate-800 transition-colors duration-300">
+        <div class="container mx-auto px-4 py-16 md:py-24">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+
+                <div class="space-y-2 text-center md:text-left">
+
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white">
+                        Você sabe qual é o seu <span class="text-emerald-600 dark:text-emerald-400">NextPath?</span>
+                    </h1>
+
+                    <div class="space-y-1">
+                        <p class="text-lg text-gray-700 dark:text-gray-300">
+                            O mercado muda todos os dias.
+                        </p>
+                        <p class="text-lg text-gray-700 dark:text-gray-300">
+                            Explore o mapa digital e descubra o seu lugar no futuro do trabalho.
+                        </p>
+                    </div>
+                    <p class="text-sm text-gray-600 dark:text-gray-400 font-medium">
+                        <strong class="text-emerald-600 dark:text-emerald-400">85%</strong> das profissões que
+                        existirão
+                        em 2035 ainda não foram criadas.
+                    </p>
+
+                </div>
+                <div class="relative flex justify-center">
+                    <img src="./img/woman-home.png" alt="pessoa-home" class="w-full z-10 max-w-sm md:max-w-md">
+                    <div
+                        class="absolute top-1/4 -right-4 md:right-10 z-20 bg-white dark:bg-slate-700 p-3 rounded-lg shadow-lg flex items-center space-x-2">
+                        <span class="text-xl font-bold text-gray-900 dark:text-white">30K+</span>
+                        <i class="fa-solid fa-briefcase text-gray-500 dark:text-gray-400"></i>
+                        <div class="text-xs text-gray-600 dark:text-gray-300 leading-tight">
+                            Pessoas foram contratadas.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white dark:bg-slate-900 py-16 md:py-24 transition-colors duration-300">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-900 dark:text-white mb-12">
+                Setores em Transformação
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
+                <div class="flex flex-col items-center">
+                    <img src="./img/connection.png" alt="Ícone de Tecnologia e IA" class="h-20 w-20 mb-4">
+                    <h3 class="text-xl font-semibold text-emerald-600 dark:text-emerald-400 mb-2">
+                        Tecnologia & IA
+                    </h3>
+                    <p class="text-gray-700 dark:text-gray-300">
+                        Inovação que redefine o trabalho.
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <img src="./img/crop-tool.png" alt="Ícone de Design Humano" class="h-20 w-20 mb-4">
+                    <h3 class="text-xl font-semibold text-emerald-600 dark:text-emerald-400 mb-2">
+                        Design Humano
+                    </h3>
+                    <p class="text-gray-700 dark:text-gray-300">
+                        Criatividade que conecta pessoas.
+                    </p>
+                </div>
+
+                <div class="flex flex-col items-center">
+                    <img src="./img/technoligical.png" alt="Ícone de Tecnologia com Propósito" class="h-20 w-20 mb-4">
+                    <h3 class="text-xl font-semibold text-emerald-600 dark:text-emerald-400 mb-2">
+                        Tecnologia com Propósito
+                    </h3>
+                    <p class="text-gray-700 dark:text-gray-300">
+                        Usando a tecnologia para melhorar vidas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <article
+        class="h-auto w-full bg-linear-to-r from-white via-emerald-50 to-white dark:from-slate-900 dark:via-slate-800 dark:to-slate-900">
+        <section class="bg-white dark:bg-slate-800 py-4 shadow-md">
+            <div id="filters" class="container mx-auto px-4 flex flex-wrap justify-center gap-2 md:gap-4">
+                <button id="filter-todos"
+                    class="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 bg-white dark:bg-slate-700 rounded-full shadow-sm hover:bg-gray-100 dark:hover:bg-slate-600 transition-colors focus:outline-none focus:ring-2 focus:ring-[#A59CFF]">
+                    Mostrar Todos
+                </button>
+
+                <button id="filter-tecnologia"
+                    class="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 bg-white dark:bg-slate-700 rounded-full shadow-sm hover:bg-gray-100 dark:hover:bg-slate-600 transition-colors focus:outline-none focus:ring-2 focus:ring-[#A59CFF]">
+                    Tecnologia
+                </button>
+
+                <button id="filter-sustentabilidade"
+                    class="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 bg-white dark:bg-slate-700 rounded-full shadow-sm hover:bg-gray-100 dark:hover:bg-slate-600 transition-colors focus:outline-none focus:ring-2 focus:ring-[#A59CFF]">
+                    Sustentabilidade
+                </button>
+
+                <button id="filter-saude"
+                    class="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 bg-white dark:bg-slate-700 rounded-full shadow-sm hover:bg-gray-100 dark:hover:bg-slate-600 transition-colors focus:outline-none focus:ring-2 focus:ring-[#A59CFF]">
+                    Saúde & Educação
+                </button>
+
+                <button id="filter-negocios"
+                    class="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 bg-white dark:bg-slate-700 rounded-full shadow-sm hover:bg-gray-100 dark:hover:bg-slate-600 transition-colors focus:outline-none focus:ring-2 focus:ring-[#A59CFF]">
+                    Negócios & Dados
+                </button>
+
+                <button id="filter-industria"
+                    class="px-4 py-2 text-sm font-medium text-gray-700 dark:text-gray-200 bg-white dark:bg-slate-700 rounded-full shadow-sm hover:bg-gray-100 dark:hover:bg-slate-600 transition-colors focus:outline-none focus:ring-2 focus:ring-[#A59CFF]">
+                    Indústria & Engenharia
+                </button>
+            </div>
+        </section>
+
+        <main class="container mx-auto px-4 py-8">
+            <div id="cards-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"></div>
+        </main>
+    </article>
+    <footer class="bg-emerald-300 dark:bg-emerald-700 shadow-inner mt-8 transition-colors duration-300">
+        <div class="container mx-auto px-4 py-6 text-center text-gray-900 dark:text-white">
+            &copy; 2025 NextPath. Todos os direitos reservados.
+        </div>
+    </footer>
+
+    <script type="module" src="./js/front.js"></script>
+</body>
+
+</html>
